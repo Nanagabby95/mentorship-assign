@@ -31,3 +31,8 @@
 // shouldServeDrinks(30, true) ➞ false
 
 
+// 15th Feb 2023
+// Create an object including your name and any other information you like.
+// Create a function that will return your information
+// Return the information in th eobject using the "this." keyword 
+

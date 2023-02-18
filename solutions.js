@@ -23,10 +23,10 @@ N:b
 // Expect only positive integer inputs.
 
 var age =parseInt(prompt('Input your age'));
-var yearLength=356;
+var yearLength=365;
 
 function inDays(a,b) { 
-    return yearLength/age +'days';
+    return yearLength*age +'days';
 }
 alert(parseFloat(inDays()));
 
@@ -40,9 +40,9 @@ alert(parseFloat(inDays()));
  const MyLuckyNums=[22, 5,1,95];
 
  function arrReverse(arrays) {
-    return arrays
+    return MyLuckyNums.reverse();
  }
- alert(MyLuckyNums.reverse());
+ arrReverse();
 
 // 5 Create a function that accepts an array and returns the last item in the array.
 
@@ -50,20 +50,26 @@ var arrItems=['icecream', 'banana', 'pizza', 'smoothie'];
  function lastItem(arr) {
     return arr[arr.length-1];
  }
- alert(lastItem(arrItems));
+lastItem(arrItems);
 
 
  // 6 Create a function that takes a number as its only argument and returns true 
 // if it's less than or equal to zero, otherwise return false.
 
-var num = Number(prompt('input your number'));
+var num = prompt('input your number');
 
 function myNum(num){
 if (num<=0){
     return true;
 }
-else{
+if(num>=1){
     return false;
+}
+if(num=isNaN){
+    return ('Only numbers are valid')
+}
+else{
+    return false
 }
 }
 alert(myNum(num));
@@ -85,17 +91,22 @@ alert(myNum(num));
 
 var eligibleAge = Number(prompt('Input your age'));
  function ageCheck() {
-    var breaktime= new Date();
-    var breaktime=(breaktime.getHours());
+    var breaktime=prompt('Are you on break?') ;
     console.log(breaktime);
    if (eligibleAge<18){
     alert('You are not eligible to drink');
    } 
-        if (breaktime<12) {
+    if (breaktime==='yes') {
             alert('true');
         }
-else if (eligibleAge>18){
+    if (eligibleAge>18){
         alert(`You are eligible to drink`);
+    }
+    if(breaktime==='no'){
+        alert('false')
+    }
+    else{
+        alert('false')
     }
  }
  alert(ageCheck());
